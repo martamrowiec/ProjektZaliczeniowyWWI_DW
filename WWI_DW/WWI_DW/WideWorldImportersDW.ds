@@ -6,8 +6,7 @@
   <ConnectionString>Provider=SQLNCLI11.1;Data Source=MARTA-ASUS;Integrated Security=SSPI;Initial Catalog=WideWorldImportersDW</ConnectionString>
   <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
   <ImpersonationInfo>
-    <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
-    <Account></Account>
+    <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
     <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
   </ImpersonationInfo>
   <Timeout>PT0S</Timeout>

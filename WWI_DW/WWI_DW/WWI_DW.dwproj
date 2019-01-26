@@ -8,24 +8,24 @@
   </Database>
   <Dimensions>
     <ProjectItem>
-      <Name>DDimCity.dim</Name>
-      <FullPath>DDimCity.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DDimCustomer.dim</Name>
-      <FullPath>DDimCustomer.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>DDimDate.dim</Name>
       <FullPath>DDimDate.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DDimStockItem.dim</Name>
+      <FullPath>DDimStockItem.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DDimEmployee.dim</Name>
       <FullPath>DDimEmployee.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DDimStockItem.dim</Name>
-      <FullPath>DDimStockItem.dim</FullPath>
+      <Name>DDimCity.dim</Name>
+      <FullPath>DDimCity.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DDimCustomer.dim</Name>
+      <FullPath>DDimCustomer.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -36,8 +36,8 @@
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>WideWorldImportersDW.dsv</Name>
-      <FullPath>WideWorldImportersDW.dsv</FullPath>
+      <Name>vWideWorldImportersDW.dsv</Name>
+      <FullPath>vWideWorldImportersDW.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
