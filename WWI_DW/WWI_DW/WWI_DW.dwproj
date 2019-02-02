@@ -6,6 +6,18 @@
     <Name>WWI_DW.database</Name>
     <FullPath>WWI_DW.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>vWideWorldImportersDW.cube</Name>
+      <FullPath>vWideWorldImportersDW.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>vWideWorldImportersDW.partitions</Name>
+          <FullPath>vWideWorldImportersDW.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>DDimDate.dim</Name>
@@ -40,6 +52,12 @@
       <FullPath>vWideWorldImportersDW.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Admin.role</Name>
+      <FullPath>Admin.role</FullPath>
+    </ProjectItem>
+  </Roles>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

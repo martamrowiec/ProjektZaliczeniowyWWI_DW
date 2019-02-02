@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2052" scrolltop="-2050" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7144" y="8943" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2052" scrolltop="-2050" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7144" y="6773" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
@@ -73,41 +73,36 @@
             <Shape Id="City Key" Expanded="true">
               <Attributes>
                 <Attribute Id="City Key" />
+                <Attribute Id="City" />
                 <Attribute Id="Sales Territory" />
                 <Attribute Id="Subregion" />
-              </Attributes>
-              <Position x="20" y="20" />
-            </Shape>
-            <Shape Id="City" Expanded="true">
-              <Attributes>
-                <Attribute Id="City" />
                 <Attribute Id="WWI City ID" />
               </Attributes>
-              <Position x="181" y="20" />
+              <Position x="20" y="20" />
             </Shape>
             <Shape Id="State Province" Expanded="false">
               <Attributes>
                 <Attribute Id="State Province" />
               </Attributes>
-              <Position x="342" y="20" />
+              <Position x="181" y="20" />
             </Shape>
             <Shape Id="Country" Expanded="false">
               <Attributes>
                 <Attribute Id="Country" />
               </Attributes>
-              <Position x="503" y="20" />
+              <Position x="342" y="20" />
             </Shape>
             <Shape Id="Region" Expanded="false">
               <Attributes>
                 <Attribute Id="Region" />
               </Attributes>
-              <Position x="665" y="20" />
+              <Position x="503" y="20" />
             </Shape>
             <Shape Id="Continent" Expanded="false">
               <Attributes>
                 <Attribute Id="Continent" />
               </Attributes>
-              <Position x="826" y="20" />
+              <Position x="665" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -139,6 +134,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="cba2c776-d20f-4f07-a0be-2e566ab3140d">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="60f7737e-2b55-4304-a095-d19cf7bba1c6">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>CityKey</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="21b7d298-4cd0-4ef6-aeec-20e857f7b373">
           <Language>1045</Language>
@@ -154,9 +157,17 @@
           <AttributeID>Subregion</AttributeID>
           <Name>Subregion</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0c57f596-841f-4047-8c1d-187b981bc392">
+        <AttributeRelationship dwd:design-time-name="e8b9a442-c725-4e63-ac60-be1b4900d3fe">
+          <AttributeID>WWI City ID</AttributeID>
+          <Name>WWI City ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9b94c7de-22de-4cec-87d8-f39f93e8fd36">
           <AttributeID>City</AttributeID>
           <Name>City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e3829f68-84c5-4efc-8d61-001b76ebe2ca">
+          <AttributeID>State Province</AttributeID>
+          <Name>State Province</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -175,6 +186,13 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="8a28ce0b-43ef-46a2-8c31-326908c8f20b">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="81819ce9-df8c-4816-9e70-81b572f943a2">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>WWICityID</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="20fb8398-6451-40c6-bfe1-5b9e6fada24a">
           <Language>1045</Language>
@@ -198,23 +216,20 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="8c27c30b-1459-4464-8188-d6a29f1da9f0">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="02e0d809-8f3f-41a1-acf6-01bf097b7c22">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>City</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="f9f299c5-20c9-454a-9a44-b841d47a616b">
           <Language>1045</Language>
           <Caption>Miasto</Caption>
         </Translation>
       </Translations>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="0b449741-294d-47a3-8edb-fe1a8e31d4a7">
-          <AttributeID>WWI City ID</AttributeID>
-          <Name>WWI City ID</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ed590e63-534d-4d68-a1f7-dbd0ebe49b4e">
-          <AttributeID>State Province</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>State Province</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -232,6 +247,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="b9890b4b-0e0c-4dca-84df-05c8288811f7">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bcdd0b3a-bd8d-4165-b49d-1817e1c0235a">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>StateProvince</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="5af1121a-dfd6-4d1b-8b46-c4636ec4f7ca">
           <Language>1045</Language>
@@ -241,7 +264,6 @@
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="2151ac37-cbfe-4596-97ec-3716bf38f165">
           <AttributeID>Country</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
           <Name>Country</Name>
         </AttributeRelationship>
       </AttributeRelationships>
@@ -262,6 +284,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="79680a3c-92e2-49fb-9a87-d1c7b15fe2b3">
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d5c71c62-6f0d-4299-a7ee-46c5c87d6366">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>Country</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="d7718f67-bacc-4474-9cbf-c2d29e7eec3b">
           <Language>1045</Language>
@@ -271,7 +301,6 @@
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="b9003b65-1f79-4c61-920f-b883ab5378f1">
           <AttributeID>Region</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
           <Name>Region</Name>
         </AttributeRelationship>
       </AttributeRelationships>
@@ -292,6 +321,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="3f22687b-b984-4db6-99ca-8d410d329867">
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="325e6127-fae7-4c06-b569-df640effafcb">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>Continent</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="01d0d7ac-ac8b-4d58-a139-e87f8083dd9f">
           <Language>1045</Language>
@@ -315,6 +352,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="ec15fa85-4c48-4b9d-9992-67e1929da3a8">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a6b08e7f-4c07-4efd-b721-cc2145550814">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>SalesTerritory</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="bd7d308a-3dc3-4b99-aea5-76c014c9ebc0">
           <Language>1045</Language>
@@ -338,6 +383,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="f489ffda-6d63-46ce-8f4e-9eee9577dbfa">
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bc5ce257-e797-4dcd-b22f-1ed4ba55ee8a">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>Region</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="a1fc86ed-b728-4f5f-8e1c-be75ad8c9191">
           <Language>1045</Language>
@@ -347,7 +400,6 @@
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="d8385f83-77b3-4f83-868a-fc1e8e2efd0b">
           <AttributeID>Continent</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
           <Name>Continent</Name>
         </AttributeRelationship>
       </AttributeRelationships>
@@ -368,6 +420,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="9ce84618-cb29-4b92-a6ad-9cd9cddfbc33">
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="39c4e73b-cc5c-42ee-b774-ea686d8294a8">
+          <TableID>dbo_vDimCity</TableID>
+          <ColumnID>Subregion</ColumnID>
+        </Source>
+      </NameColumn>
       <Translations>
         <Translation dwd:design-time-name="ade26b22-103c-4be1-bb16-772de89a7139">
           <Language>1045</Language>
@@ -428,16 +488,10 @@
             </Translation>
           </Translations>
         </Level>
-        <Level dwd:design-time-name="303cd549-c85a-4860-9ada-213be3bc1ca2">
-          <ID>City</ID>
-          <Name>City</Name>
-          <SourceAttributeID>City</SourceAttributeID>
-          <Translations>
-            <Translation dwd:design-time-name="59fe082d-40d2-45b0-b11d-77ad396c35ac">
-              <Language>1045</Language>
-              <Caption>Miasto</Caption>
-            </Translation>
-          </Translations>
+        <Level dwd:design-time-name="0b5abd7d-2be9-4c7f-8f1e-5e64c65c031d">
+          <ID>City Key</ID>
+          <Name>City Key</Name>
+          <SourceAttributeID>City Key</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
