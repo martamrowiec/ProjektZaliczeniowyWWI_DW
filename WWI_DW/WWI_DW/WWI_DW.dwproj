@@ -57,6 +57,10 @@
       <Name>Admin.role</Name>
       <FullPath>Admin.role</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Role 1.role</Name>
+      <FullPath>Role 1.role</FullPath>
+    </ProjectItem>
   </Roles>
   <Configurations>
     <Configuration>

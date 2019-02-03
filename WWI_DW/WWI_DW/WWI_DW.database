@@ -27,5 +27,13 @@
       <Read>Allowed</Read>
       <Administer>true</Administer>
     </DatabasePermission>
+    <DatabasePermission dwd:design-time-name="8fe7b72e-c096-4cca-8b06-cf7bfa0c8920">
+      <ID>DatabasePermission 1</ID>
+      <Name>DatabasePermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <Read>Allowed</Read>
+    </DatabasePermission>
   </DatabasePermissions>
 </Database>

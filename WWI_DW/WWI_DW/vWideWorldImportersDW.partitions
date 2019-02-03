@@ -22,26 +22,6 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>v Dim Date</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="927876af-88e9-4fee-8ff0-e25fcaf67beb">
-          <ID>v Dim Date</ID>
-          <Name>v Dim Date</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cb1e02d6-79e5-465e-b1c1-6c94d8cf0b7e">
-            <DataSourceViewID>vWideWorldImportersDW</DataSourceViewID>
-            <TableID>dbo_vDimDate</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
       <ID>v Fact Movement</ID>
       <Partitions>
         <Partition dwd:design-time-name="62cfc814-45e3-4a94-993c-161f7722d37d">
@@ -62,66 +42,6 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>v Dim Stock Item</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="378ca135-9f78-4669-aaa1-8508df5dbf4c">
-          <ID>v Dim Stock Item</ID>
-          <Name>v Dim Stock Item</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a06e15ae-d0e0-405b-b24e-f2ef5b24cd90">
-            <DataSourceViewID>vWideWorldImportersDW</DataSourceViewID>
-            <TableID>dbo_vDimStockItem</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
-      <ID>v Dim Employee</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="097fa7c1-df16-47e6-9f02-f05ca7a7e2e4">
-          <ID>v Dim Employee</ID>
-          <Name>v Dim Employee</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="57b2bcbf-e99c-4b1a-aa4c-e68fa5c747e5">
-            <DataSourceViewID>vWideWorldImportersDW</DataSourceViewID>
-            <TableID>dbo_vDimEmployee</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
-      <ID>v Dim City</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="cfc1c450-3d9d-4864-8cce-1a85bbbd78a9">
-          <ID>v Dim City</ID>
-          <Name>v Dim City</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="79c4171b-7b56-4850-9373-4e335b9a754b">
-            <DataSourceViewID>vWideWorldImportersDW</DataSourceViewID>
-            <TableID>dbo_vDimCity</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
       <ID>v Fact Sale</ID>
       <Partitions>
         <Partition dwd:design-time-name="b7399f2d-6c2b-411c-89e5-b2ffa76eaf5a">
@@ -134,26 +54,6 @@
           <Source xsi:type="DsvTableBinding" dwd:design-time-name="82511de9-9a61-46c6-8297-acc0f6bf73bf">
             <DataSourceViewID>vWideWorldImportersDW</DataSourceViewID>
             <TableID>dbo_vFactSale</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
-      <ID>v Dim Customer</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="7fe067f5-6ecb-47c7-8e9a-6c5fdf3c1037">
-          <ID>v Dim Customer</ID>
-          <Name>v Dim Customer</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="54e96b67-2a10-4571-87f3-9d055bd0ca13">
-            <DataSourceViewID>vWideWorldImportersDW</DataSourceViewID>
-            <TableID>dbo_vDimCustomer</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
