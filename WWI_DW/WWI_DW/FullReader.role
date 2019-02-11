@@ -3,4 +3,9 @@
   <Name>Role 1</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Members>
+    <Member>
+      <Name>Gość</Name>
+    </Member>
+  </Members>
 </Role>
